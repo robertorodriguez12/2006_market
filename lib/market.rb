@@ -21,4 +21,8 @@ class Market
     end
   end
 
+  def total_inventory
+    # binding.pry
+    @vendors.map{|vendor| vendor.inventory}.uniq
+  end
 end
